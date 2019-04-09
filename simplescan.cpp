@@ -43,7 +43,8 @@ int main(int argc, char **argv)
         if (hci_read_remote_name(sock, &(ii+i)->bdaddr, sizeof(name),
             name, 0) < 0)
         strcpy(name, "[unknown]");
-        printf("%s %s\n", addr, name);
+        //printf("%s %s\n", addr, name);
+        std::cout << addr << ' ' << name << '\n';
     }
 
     free(ii);
