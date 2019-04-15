@@ -1,5 +1,5 @@
 // example from the book
-// gcc -o simplescan simplescan.c -lbluetooth
+// g++ -o simplescan simplescan.c -lbluetooth
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,6 +8,7 @@
 #include <bluetooth/bluetooth.h>
 #include <bluetooth/hci.h>
 #include <bluetooth/hci_lib.h>
+#include "iostream"
 
 int main(int argc, char **argv)
 {
@@ -28,12 +29,13 @@ int main(int argc, char **argv)
     max_rsp = 255;
     flags = IREQ_CACHE_FLUSH;
     ii = (inquiry_info*)malloc(max_rsp * sizeof(inquiry_info));
-    while (num_rsp == 0){
+    while (num_rsp < 1){
         num_rsp = hci_inquiry(dev_id, len, max_rsp, NULL, &ii, flags);
     }
     // num_rsp = hci_inquiry(dev_id, len, max_rsp, NULL, &ii, flags);
-    printf(">>> num_rsp: %i\n", num_rsp);
-    if( num_rsp < 0 ) perror("hci_inquiry");
+    // printf(">>> num_rsp: %i\n", num_rsp);
+    std::cout << "Number of discovered devices: " << num_rsp << '\n';
+    if(num_rsp < 0) perror("hci_inquiry");
     
     for (i = 0; i < num_rsp; i++) {
         ba2str(&(ii+i)->bdaddr, addr);
@@ -41,11 +43,11 @@ int main(int argc, char **argv)
         if (hci_read_remote_name(sock, &(ii+i)->bdaddr, sizeof(name),
             name, 0) < 0)
         strcpy(name, "[unknown]");
-        printf("%s %s\n", addr, name);
+        //printf("%s %s\n", addr, name);
+        std::cout << addr << ' ' << name << '\n';
     }
 
-    free( ii );
-    close( sock );
+    free(ii);
+    close(sock);
     return 0;
 }
-
