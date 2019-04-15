@@ -32,13 +32,13 @@ sdp_session_t *register_service()
     sdp_uuid16_create(&svc_class_uuid, SERIAL_PORT_SVCLASS_ID);
     svc_class_list = sdp_list_append(0, &svc_class_uuid);
     sdp_set_service_classes(&record, svc_class_list);
-    
+
     // set the Bluetooth profile information
     sdp_uuid16_create(&profile.uuid, SERIAL_PORT_PROFILE_ID);
     profile.version = 0x0100;
     profile_list = sdp_list_append(0, &profile);
     sdp_set_profile_descs(&record, profile_list);
-    
+
     // make the service record publicly browsable
     sdp_uuid16_create(&root_uuid, PUBLIC_BROWSE_GROUP);
     root_list = sdp_list_append(0, &root_uuid);
