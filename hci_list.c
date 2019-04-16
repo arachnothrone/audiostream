@@ -42,7 +42,8 @@ int main(void)
 	for(i = 0; i < hci_devs_num; i++)
 		if(i == 0 || hci_test_bit(HCI_UP, &hci_devs[i].flags))
 			printf("HCI Name : %s\nAddress  : %s\n", hci_devs[i].name, batostr(&hci_devs[i].bdaddr));
-
+			printf("HCI features: %s\n", hci_devs[i].features);
+			printf("HCI type: %s, mode: %s\n", hci_devs[i].type, hci_devs[i].link_mode);
 	free(hci_devs);
 	return 0;
 }
