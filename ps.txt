@@ -1,0 +1,85 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  1.2  26988  4608 ?        Ss   Apr11   0:47 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    Apr11   0:00 [kthreadd]
+root         4  0.0  0.0      0     0 ?        I<   Apr11   0:00 [kworker/0:0H]
+root         6  0.0  0.0      0     0 ?        I<   Apr11   0:00 [mm_percpu_wq]
+root         7  0.0  0.0      0     0 ?        S    Apr11   1:42 [ksoftirqd/0]
+root         8  0.0  0.0      0     0 ?        S    Apr11   0:00 [kdevtmpfs]
+root         9  0.0  0.0      0     0 ?        I<   Apr11   0:00 [netns]
+root        11  0.0  0.0      0     0 ?        S    Apr11   0:01 [khungtaskd]
+root        12  0.0  0.0      0     0 ?        S    Apr11   0:00 [oom_reaper]
+root        13  0.0  0.0      0     0 ?        I<   Apr11   0:00 [writeback]
+root        14  0.0  0.0      0     0 ?        S    Apr11   0:00 [kcompactd0]
+root        15  0.0  0.0      0     0 ?        I<   Apr11   0:00 [crypto]
+root        16  0.0  0.0      0     0 ?        I<   Apr11   0:00 [kblockd]
+root        17  0.0  0.0      0     0 ?        I<   Apr11   0:00 [watchdogd]
+root        18  0.0  0.0      0     0 ?        I<   Apr11   0:00 [rpciod]
+root        19  0.0  0.0      0     0 ?        I<   Apr11   0:00 [xprtiod]
+root        22  0.0  0.0      0     0 ?        S    Apr11   0:02 [kswapd0]
+root        23  0.0  0.0      0     0 ?        I<   Apr11   0:00 [nfsiod]
+root        33  0.0  0.0      0     0 ?        I<   Apr11   0:00 [kthrotld]
+root        34  0.0  0.0      0     0 ?        I<   Apr11   0:00 [iscsi_eh]
+root        35  0.0  0.0      0     0 ?        I<   Apr11   0:00 [dwc_otg]
+root        36  0.0  0.0      0     0 ?        I<   Apr11   0:00 [DWC Notificatio]
+root        37  0.0  0.0      0     0 ?        S<   Apr11   0:00 [vchiq-slot/0]
+root        38  0.0  0.0      0     0 ?        S<   Apr11   0:00 [vchiq-recy/0]
+root        39  0.0  0.0      0     0 ?        S<   Apr11   0:00 [vchiq-sync/0]
+root        40  0.0  0.0      0     0 ?        S    Apr11   0:00 [vchiq-keep/0]
+root        41  0.0  0.0      0     0 ?        S<   Apr11   0:00 [SMIO]
+root        42  0.0  0.0      0     0 ?        S    Apr11   4:06 [irq/86-mmc1]
+root        46  0.0  0.0      0     0 ?        S    Apr11   0:58 [mmcqd/0]
+root        47  0.0  0.0      0     0 ?        S    Apr11   0:20 [jbd2/mmcblk0p7-]
+root        48  0.0  0.0      0     0 ?        I<   Apr11   0:00 [ext4-rsv-conver]
+root        49  0.0  0.0      0     0 ?        I<   Apr11   0:00 [ipv6_addrconf]
+root        62  0.0  0.0      0     0 ?        I<   Apr11   0:00 [kworker/0:1H]
+root        87  0.0  1.2  27972  4884 ?        Ss   Apr11   2:02 /lib/systemd/systemd-journald
+root       101  0.0  0.6  14504  2572 ?        Ss   Apr11   1:47 /lib/systemd/systemd-udevd
+root       131  7.6  0.0      0     0 ?        S    Apr11 1452:15 [w1_bus_master1]
+root       137  0.0  0.0      0     0 ?        S    Apr11   0:00 [spi0]
+root       151  0.0  0.0      0     0 ?        I<   Apr11   0:00 [cfg80211]
+root       153  0.0  0.0      0     0 ?        I<   Apr11   0:00 [brcmf_wq/mmc1:0]
+root       154  0.0  0.0      0     0 ?        S    Apr11   0:46 [brcmf_wdog/mmc1]
+systemd+   183  0.0  0.9  17268  3492 ?        Ssl  Apr11   0:06 /lib/systemd/systemd-timesyncd
+avahi      213  0.0  0.7   6488  2996 ?        Ss   Apr11   4:32 avahi-daemon: running [raspberrypi.local]
+message+   219  0.0  0.7   6604  2972 ?        Ss   Apr11   0:05 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+avahi      228  0.0  0.3   6384  1164 ?        S    Apr11   0:00 avahi-daemon: chroot helper
+root       241  0.0  0.9   7372  3692 ?        Ss   Apr11   0:06 /lib/systemd/systemd-logind
+root       243  0.0  0.6   9984  2364 ?        Ss   Apr11   0:17 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+root       244  0.0  0.6  22856  2476 ?        Ssl  Apr11   0:35 /usr/sbin/rsyslogd -n
+root       248  0.0  0.6   5288  2308 ?        Ss   Apr11   0:05 /usr/sbin/cron -f
+nobody     256  0.0  0.5   5276  2032 ?        Ss   Apr11   0:26 /usr/sbin/thd --triggers /etc/triggerhappy/triggers.d/ --socket /run/thd.socket --user nobody --deviceglob /dev/input/event*
+root       261  0.0  0.4   2864  1692 ?        Ss   Apr11   0:01 /sbin/dhcpcd -q -b
+root       299  0.0  0.5   7260  2052 ?        S    Apr11   0:00 /usr/sbin/cnid_metad -l log_note
+root       310  0.0  1.0  22692  4052 ?        Sl   Apr11   0:21 /usr/sbin/afpd -U uams_dhx2.so,uams_clrtxt.so -g nobody -c 50 -n raspberrypi
+root       314  0.0  0.5   5684  2032 ?        Ss   Apr11   0:00 /usr/bin/vncserver-x11-serviced -fg
+root       318  0.0  1.4  30320  5656 ?        Sl   Apr11   2:53 /usr/bin/vncserver-x11-core -service
+root       326  0.0  0.1   2076   496 ?        S    Apr11   0:00 /usr/bin/hciattach /dev/serial1 bcm43xx 3000000 flow - b8:27:eb:c6:db:91
+root       335  0.0  0.7  10192  2756 ?        Ss   Apr11   0:00 /usr/sbin/sshd -D
+root       336  0.0  0.4   3956  1764 ttyS0    Ss+  Apr11   0:00 /sbin/agetty --keep-baud 115200,38400,9600 ttyS0 vt220
+root       337  0.0  0.6   6060  2404 tty1     Ss   Apr11   0:00 /bin/login -f
+pi         356  0.0  1.1   9780  4512 ?        Ss   Apr11   0:00 /lib/systemd/systemd --user
+pi         361  0.0  0.4  11392  1640 ?        S    Apr11   0:00 (sd-pam)
+root       372  0.0  0.9   7436  3480 ?        Ss   Apr11   0:02 /usr/lib/bluetooth/bluetoothd
+root       378  0.0  0.7  35028  2836 ?        Ssl  Apr11   0:00 /usr/bin/bluealsa
+pi         383  0.0  0.4   6008  1788 tty1     S+   Apr11   0:00 -bash
+root       397  0.0  0.0      0     0 ?        S<   Apr11   0:00 [krfcommd]
+root       412  0.0  0.7  10564  2788 ?        Ss   Apr11   0:24 wpa_supplicant -B -c/etc/wpa_supplicant/wpa_supplicant.conf -iwlan0 -Dnl80211,wext
+rtkit      855  0.0  0.6  24160  2548 ?        SNsl Apr11   0:37 /usr/lib/rtkit/rtkit-daemon
+root       858  0.0  1.4  40340  5652 ?        Ssl  Apr11   0:02 /usr/lib/policykit-1/polkitd --no-debug
+pi         862  0.0  0.7   6372  2932 ?        Ss   Apr11   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation
+root      1159  0.0  1.6  46392  6240 ?        Ssl  Apr11   0:22 /usr/lib/packagekit/packagekitd
+root      4732  0.1  0.0      0     0 ?        I    16:23   0:11 [kworker/u2:0]
+root      4982  0.0  0.0      0     0 ?        I<   17:50   0:01 [kworker/u3:2]
+root      5036  0.2  0.0      0     0 ?        I    18:11   0:06 [kworker/u2:1]
+root      5121  0.0  0.0      0     0 ?        I    18:37   0:00 [kworker/0:0]
+root      5168  1.8  0.0      0     0 ?        I    18:50   0:10 [kworker/u2:3]
+root      5169  0.0  1.5  11704  5716 ?        Ss   18:50   0:00 sshd: pi [priv]
+pi        5179  0.0  1.0  11836  3808 ?        S    18:50   0:00 sshd: pi@pts/0
+pi        5182  0.2  1.1   6180  4192 pts/0    Ss   18:50   0:01 -bash
+root      5223  0.0  0.0      0     0 ?        I    18:53   0:00 [kworker/0:3]
+root      5225  0.0  0.0      0     0 ?        I<   18:53   0:00 [kworker/u3:1]
+pi        5246 10.3  2.4 120444  9404 ?        Sl   18:55   0:25 pulseaudio -D
+root      5277  1.7  0.0      0     0 ?        I    18:55   0:03 [kworker/u2:2]
+root      5321  0.0  0.0      0     0 ?        I    18:59   0:00 [kworker/0:1]
+pi        5327  0.0  0.7   7732  2944 pts/0    R+   18:59   0:00 ps aux
+root     32741  0.0  0.0      0     0 ?        I<   Apr23   0:19 [kworker/u3:0]

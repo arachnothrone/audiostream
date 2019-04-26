@@ -1,6 +1,8 @@
 // Bluetooth headphones emulator
 // (c) arachnothrone
 // c++ -o raspihead raspihead.cpp -std=c++11 -lpthread
+// 54:26:96:D6:27:BC mac
+// B8:27:EB:C6:DB:91 ras
 
 #include <iostream>
 #include <string>
