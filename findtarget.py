@@ -1,3 +1,7 @@
+"""
+Looking for a comminication target
+"""
+
 from bluetooth import *
 
 target_name = "iPhone"
@@ -6,8 +10,9 @@ target_addr = None
 nearby_devs = discover_devices()
 
 for address in nearby_devs:
-    print("Found BT dev: {}".format(address))
-    if target_name == lookup_name(address):
+    device_name = lookup_name(address)
+    print("Found BT device, address = {}, name = {}".format(address, device_name))
+    if target_name == device_name:
         target_addr = address
         break
 
