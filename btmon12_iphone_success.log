@@ -1,0 +1,1437 @@
+Bluetooth monitor ver 5.43
+= Note: Linux version 4.14.98+ (armv6l)                                0.220978
+= Note: Bluetooth subsystem version 2.22                               0.220993
+= New Index: B8:27:EB:C6:DB:91 (Primary,UART,hci0)              [hci0] 0.220998
+= Open Index: B8:27:EB:C6:DB:91                                 [hci0] 0.221001
+= Index Info: B8:27:EB:C6:DB:91 (Broadcom Corporation)          [hci0] 0.221004
+@ MGMT Open: bluetoothd (privileged) version 1.14             {0x0001} 0.221010
+@ MGMT Open: btmon (privileged) version 1.14                  {0x0002} 0.221127
+> HCI Event: Connect Request (0x04) plen 10                     [hci0] 6.803965
+        Address: 58:E2:8F:0B:8E:15 (OUI 58-E2-8F)
+        Class: 0x7a020c
+          Major class: Phone (cellular, cordless, payphone, modem)
+          Minor class: Smart phone
+          Networking (LAN, Ad hoc)
+          Capturing (Scanner, Microphone)
+          Object Transfer (v-Inbox, v-Folder)
+          Audio (Speaker, Microphone, Headset)
+          Telephony (Cordless telephony, Modem, Headset)
+        Link type: ACL (0x01)
+< HCI Command: Accept Connection Request (0x01|0x0009) plen 7   [hci0] 6.804133
+        Address: 58:E2:8F:0B:8E:15 (OUI 58-E2-8F)
+        Role: Master (0x00)
+> HCI Event: Command Status (0x0f) plen 4                       [hci0] 6.807268
+      Accept Connection Request (0x01|0x0009) ncmd 1
+        Status: Success (0x00)
+> HCI Event: Role Change (0x12) plen 8                          [hci0] 6.965602
+        Status: Success (0x00)
+        Address: 58:E2:8F:0B:8E:15 (OUI 58-E2-8F)
+        Role: Master (0x00)
+> HCI Event: Connect Complete (0x03) plen 11                    [hci0] 7.042005
+        Status: Success (0x00)
+        Handle: 12
+        Address: 58:E2:8F:0B:8E:15 (OUI 58-E2-8F)
+        Link type: ACL (0x01)
+        Encryption: Disabled (0x00)
+< HCI Command: Read Remote Supported Fe.. (0x01|0x001b) plen 2  [hci0] 7.042469
+        Handle: 12
+> HCI Event: Max Slots Change (0x1b) plen 3                     [hci0] 7.045378
+        Handle: 12
+        Max slots: 5
+> HCI Event: Command Status (0x0f) plen 4                       [hci0] 7.047499
+      Read Remote Supported Features (0x01|0x001b) ncmd 1
+        Status: Success (0x00)
+> HCI Event: Read Remote Supported Features (0x0b) plen 11      [hci0] 7.047631
+        Status: Success (0x00)
+        Handle: 12
+        Features: 0xbf 0xfe 0xcf 0xfe 0xdb 0xff 0x7b 0x87
+          3 slot packets
+          5 slot packets
+          Encryption
+          Slot offset
+          Timing accuracy
+          Role switch
+          Sniff mode
+          Power control requests
+          Channel quality driven data rate (CQDDR)
+          SCO link
+          HV2 packets
+          HV3 packets
+          u-law log synchronous data
+          A-law log synchronous data
+          CVSD synchronous data
+          Paging parameter negotiation
+          Power control
+          Transparent synchronous data
+          Flow control lag (most significant bit)
+          Broadcast Encryption
+          Enhanced Data Rate ACL 2 Mbps mode
+          Enhanced Data Rate ACL 3 Mbps mode
+          Enhanced inquiry scan
+          Interlaced inquiry scan
+          Interlaced page scan
+          RSSI with inquiry results
+          Extended SCO link (EV3 packets)
+          EV4 packets
+          EV5 packets
+          AFH capable slave
+          AFH classification slave
+          LE Supported (Controller)
+          3-slot Enhanced Data Rate ACL packets
+          5-slot Enhanced Data Rate ACL packets
+          Sniff subrating
+          Pause encryption
+          AFH capable master
+          AFH classification master
+          Enhanced Data Rate eSCO 2 Mbps mode
+          Enhanced Data Rate eSCO 3 Mbps mode
+          3-slot Enhanced Data Rate eSCO packets
+          Extended Inquiry Response
+          Simultaneous LE and BR/EDR (Controller)
+          Secure Simple Pairing
+          Encapsulated PDU
+          Erroneous Data Reporting
+          Non-flushable Packet Boundary Flag
+          Link Supervision Timeout Changed Event
+          Inquiry TX Power Level
+          Enhanced Power Control
+          Extended features
+< HCI Command: Read Remote Extended Fea.. (0x01|0x001c) plen 3  [hci0] 7.047709
+        Handle: 12
+        Page: 1
+> HCI Event: Command Status (0x0f) plen 4                       [hci0] 7.048353
+      Read Remote Extended Features (0x01|0x001c) ncmd 1
+        Status: Success (0x00)
+> HCI Event: Read Remote Extended Features (0x23) plen 13       [hci0] 7.048465
+        Status: Success (0x00)
+        Handle: 12
+        Page: 1/2
+        Features: 0x0f 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+          Secure Simple Pairing (Host Support)
+          LE Supported (Host)
+          Simultaneous LE and BR/EDR (Host)
+          Secure Connections (Host Support)
+< HCI Command: Remote Name Request (0x01|0x0019) plen 10        [hci0] 7.048595
+        Address: 58:E2:8F:0B:8E:15 (OUI 58-E2-8F)
+        Page scan repetition mode: R2 (0x02)
+        Page scan mode: Mandatory (0x00)
+        Clock offset: 0x0000
+< ACL Data TX: Handle 12 flags 0x00 dlen 10                     [hci0] 7.048637
+      L2CAP: Information Request (0x0a) ident 1 len 2
+        Type: Extended features supported (0x0002)
+> HCI Event: Command Status (0x0f) plen 4                       [hci0] 7.049417
+      Remote Name Request (0x01|0x0019) ncmd 1
+        Status: Success (0x00)
+> ACL Data RX: Handle 12 flags 0x02 dlen 10                     [hci0] 7.054434
+      L2CAP: Information Request (0x0a) ident 79 len 2
+        Type: Extended features supported (0x0002)
+< ACL Data TX: Handle 12 flags 0x00 dlen 16                     [hci0] 7.054562
+      L2CAP: Information Response (0x0b) ident 79 len 8
+        Type: Extended features supported (0x0002)
+        Result: Success (0x0000)
+        Features: 0x000002b8
+          Enhanced Retransmission Mode
+          Streaming Mode
+          FCS Option
+          Fixed Channels
+          Unicast Connectionless Data Reception
+> ACL Data RX: Handle 12 flags 0x02 dlen 16                     [hci0] 7.055700
+      L2CAP: Information Response (0x0b) ident 1 len 8
+        Type: Extended features supported (0x0002)
+        Result: Success (0x0000)
+        Features: 0x000002a8
+          Enhanced Retransmission Mode
+          FCS Option
+          Fixed Channels
+          Unicast Connectionless Data Reception
+< ACL Data TX: Handle 12 flags 0x00 dlen 10                     [hci0] 7.055816
+      L2CAP: Information Request (0x0a) ident 2 len 2
+        Type: Fixed channels supported (0x0003)
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 7.058803
+        Num handles: 1
+        Handle: 12
+        Count: 2
+> HCI Event: Remote Name Req Complete (0x07) plen 255           [hci0] 7.064231
+        Status: Success (0x00)
+        Address: 58:E2:8F:0B:8E:15 (OUI 58-E2-8F)
+        Name: ealefad's iPhone
+@ MGMT Event: Device Connected (0x000b) plen 36        {0x0002} [hci0] 7.064358
+        BR/EDR Address: 58:E2:8F:0B:8E:15 (OUI 58-E2-8F)
+        Flags: 0x00000000
+        Data length: 23
+        Name (complete): ealefad's iPhone
+        Class: 0x7a020c
+          Major class: Phone (cellular, cordless, payphone, modem)
+          Minor class: Smart phone
+          Networking (LAN, Ad hoc)
+          Capturing (Scanner, Microphone)
+          Object Transfer (v-Inbox, v-Folder)
+          Audio (Speaker, Microphone, Headset)
+          Telephony (Cordless telephony, Modem, Headset)
+@ MGMT Event: Device Connected (0x000b) plen 36        {0x0001} [hci0] 7.064358
+        BR/EDR Address: 58:E2:8F:0B:8E:15 (OUI 58-E2-8F)
+        Flags: 0x00000000
+        Data length: 23
+        Name (complete): ealefad's iPhone
+        Class: 0x7a020c
+          Major class: Phone (cellular, cordless, payphone, modem)
+          Minor class: Smart phone
+          Networking (LAN, Ad hoc)
+          Capturing (Scanner, Microphone)
+          Object Transfer (v-Inbox, v-Folder)
+          Audio (Speaker, Microphone, Headset)
+          Telephony (Cordless telephony, Modem, Headset)
+> ACL Data RX: Handle 12 flags 0x02 dlen 10                     [hci0] 7.067120
+      L2CAP: Information Request (0x0a) ident 80 len 2
+        Type: Fixed channels supported (0x0003)
+< ACL Data TX: Handle 12 flags 0x00 dlen 20                     [hci0] 7.067252
+      L2CAP: Information Response (0x0b) ident 80 len 12
+        Type: Fixed channels supported (0x0003)
+        Result: Success (0x0000)
+        Channels: 0x0000000000000086
+          L2CAP Signaling (BR/EDR)
+          Connectionless reception
+          Security Manager (BR/EDR)
+> ACL Data RX: Handle 12 flags 0x02 dlen 20                     [hci0] 7.088343
+      L2CAP: Information Response (0x0b) ident 2 len 12
+        Type: Fixed channels supported (0x0003)
+        Result: Success (0x0000)
+        Channels: 0x04010c0000000076
+          L2CAP Signaling (BR/EDR)
+          Connectionless reception
+          Attribute Protocol
+          L2CAP Signaling (LE)
+          Security Manager (LE)
+          Unknown channels (0x4010c0000000000)
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 7.088371
+        Num handles: 1
+        Handle: 12
+        Count: 2
+> ACL Data RX: Handle 12 flags 0x02 dlen 12                     [hci0] 7.092317
+      L2CAP: Connection Request (0x02) ident 81 len 4
+        PSM: 1 (0x0001)
+        Source CID: 11015
+< ACL Data TX: Handle 12 flags 0x00 dlen 16                     [hci0] 7.092521
+      L2CAP: Connection Response (0x03) ident 81 len 8
+        Destination CID: 64
+        Source CID: 11015
+        Result: Connection successful (0x0000)
+        Status: No further information available (0x0000)
+< ACL Data TX: Handle 12 flags 0x00 dlen 23                     [hci0] 7.092564
+      L2CAP: Configure Request (0x04) ident 3 len 15
+        Destination CID: 11015
+        Flags: 0x0000
+        Option: Retransmission and Flow Control (0x04) [mandatory]
+          Mode: Basic (0x00)
+          TX window size: 0
+          Max transmit: 0
+          Retransmission timeout: 0
+          Monitor timeout: 0
+          Maximum PDU size: 0
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 7.098293
+        Num handles: 1
+        Handle: 12
+        Count: 2
+> ACL Data RX: Handle 12 flags 0x02 dlen 16                     [hci0] 7.099427
+      L2CAP: Configure Request (0x04) ident 82 len 8
+        Destination CID: 64
+        Flags: 0x0000
+        Option: Maximum Transmission Unit (0x01) [mandatory]
+          MTU: 256
+< ACL Data TX: Handle 12 flags 0x00 dlen 18                     [hci0] 7.099637
+      L2CAP: Configure Response (0x05) ident 82 len 10
+        Source CID: 11015
+        Flags: 0x0000
+        Result: Success (0x0000)
+        Option: Maximum Transmission Unit (0x01) [mandatory]
+          MTU: 256
+> ACL Data RX: Handle 12 flags 0x02 dlen 29                     [hci0] 7.100728
+      L2CAP: Configure Response (0x05) ident 3 len 21
+        Source CID: 64
+        Flags: 0x0000
+        Result: Success (0x0000)
+        Option: Maximum Transmission Unit (0x01) [mandatory]
+          MTU: 672
+        Option: Retransmission and Flow Control (0x04) [mandatory]
+          Mode: Basic (0x00)
+          TX window size: 0
+          Max transmit: 0
+          Retransmission timeout: 0
+          Monitor timeout: 0
+          Maximum PDU size: 0
+> ACL Data RX: Handle 12 flags 0x02 dlen 23                     [hci0] 7.105762
+      Channel: 64 len 19 [PSM 1 mode 0] {chan 0}
+      SDP: Service Attribute Request (0x04) tid 1 len 14
+        Record handle: 0x0000
+        Max attribute bytes: 256
+        Attribute list: [len 7]
+          Sequence (6) with 5 bytes [8 extra bits] len 7
+            Unsigned Integer (1) with 4 bytes [0 extra bits] len 5
+              0x00000201
+        Continuation state: 0
+< ACL Data TX: Handle 12 flags 0x00 dlen 46                     [hci0] 7.106892
+      Channel: 11015 len 42 [PSM 1 mode 0] {chan 0}
+      SDP: Service Attribute Response (0x05) tid 1 len 37
+        Attribute bytes: 34
+          Attribute list: [len 32] {position 0}
+            Attribute: Service Record Handle (0x0000) [len 2]
+              0x00000000
+            Attribute: Service Class ID List (0x0001) [len 2]
+              UUID (3) with 2 bytes [0 extra bits] len 3
+                Service Discovery Server Service Class (0x1000)
+            Attribute: Unknown (0x0200) [len 2]
+              Unsigned Integer (1) with 2 bytes [0 extra bits] len 3
+                0x0100
+            Attribute: Unknown (0x0201) [len 2]
+              0x5cc21087
+        Continuation state: 0
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 7.109709
+        Num handles: 1
+        Handle: 12
+        Count: 2
+> ACL Data RX: Handle 12 flags 0x02 dlen 25                     [hci0] 7.111979
+      Channel: 64 len 21 [PSM 1 mode 0] {chan 0}
+      SDP: Service Search Attribute Request (0x06) tid 2 len 16
+        Search pattern: [len 8]
+          Sequence (6) with 6 bytes [8 extra bits] len 8
+            UUID (3) with 2 bytes [0 extra bits] len 3
+              Handsfree Audio Gateway (0x111f)
+            UUID (3) with 2 bytes [0 extra bits] len 3
+              RFCOMM (0x0003)
+        Max record count: 256
+        Attribute list: [len 5]
+          Sequence (6) with 3 bytes [8 extra bits] len 5
+            Unsigned Integer (1) with 2 bytes [0 extra bits] len 3
+              0x0004
+        Continuation state: 0
+< ACL Data TX: Handle 12 flags 0x00 dlen 33                     [hci0] 7.112858
+      Channel: 11015 len 29 [PSM 1 mode 0] {chan 0}
+      SDP: Service Search Attribute Response (0x07) tid 2 len 24
+        Attribute bytes: 21
+          Attribute list: [len 17] {position 0}
+            Attribute: Protocol Descriptor List (0x0004) [len 2]
+              Sequence (6) with 3 bytes [8 extra bits] len 5
+                UUID (3) with 2 bytes [0 extra bits] len 3
+                  L2CAP (0x0100)
+              Sequence (6) with 5 bytes [8 extra bits] len 7
+                UUID (3) with 2 bytes [0 extra bits] len 3
+                  RFCOMM (0x0003)
+                Unsigned Integer (1) with 1 byte [0 extra bits] len 2
+                  0x0d
+        Continuation state: 0
+> ACL Data RX: Handle 12 flags 0x02 dlen 25                     [hci0] 7.139448
+      Channel: 64 len 21 [PSM 1 mode 0] {chan 0}
+      SDP: Service Search Attribute Request (0x06) tid 3 len 16
+        Search pattern: [len 8]
+          Sequence (6) with 6 bytes [8 extra bits] len 8
+            UUID (3) with 2 bytes [0 extra bits] len 3
+              Headset AG (0x1112)
+            UUID (3) with 2 bytes [0 extra bits] len 3
+              RFCOMM (0x0003)
+        Max record count: 256
+        Attribute list: [len 5]
+          Sequence (6) with 3 bytes [8 extra bits] len 5
+            Unsigned Integer (1) with 2 bytes [0 extra bits] len 3
+              0x0004
+        Continuation state: 0
+< ACL Data TX: Handle 12 flags 0x00 dlen 33                     [hci0] 7.140843
+      Channel: 11015 len 29 [PSM 1 mode 0] {chan 0}
+      SDP: Service Search Attribute Response (0x07) tid 3 len 24
+        Attribute bytes: 21
+          Attribute list: [len 17] {position 0}
+            Attribute: Protocol Descriptor List (0x0004) [len 2]
+              Sequence (6) with 3 bytes [8 extra bits] len 5
+                UUID (3) with 2 bytes [0 extra bits] len 3
+                  L2CAP (0x0100)
+              Sequence (6) with 5 bytes [8 extra bits] len 7
+                UUID (3) with 2 bytes [0 extra bits] len 3
+                  RFCOMM (0x0003)
+                Unsigned Integer (1) with 1 byte [0 extra bits] len 2
+                  0x0c
+        Continuation state: 0
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 7.144485
+        Num handles: 1
+        Handle: 12
+        Count: 2
+> ACL Data RX: Handle 12 flags 0x02 dlen 12                     [hci0] 7.146883
+      L2CAP: Disconnection Request (0x06) ident 83 len 4
+        Destination CID: 64
+        Source CID: 11015
+< ACL Data TX: Handle 12 flags 0x00 dlen 12                     [hci0] 7.147028
+      L2CAP: Disconnection Response (0x07) ident 83 len 4
+        Destination CID: 64
+        Source CID: 11015
+> HCI Event: Link Key Request (0x17) plen 6                     [hci0] 7.154469
+        Address: 58:E2:8F:0B:8E:15 (OUI 58-E2-8F)
+< HCI Command: Link Key Request Reply (0x01|0x000b) plen 22     [hci0] 7.154594
+        Address: 58:E2:8F:0B:8E:15 (OUI 58-E2-8F)
+        Link key: 4e10407b6a520bb0e84abe052d88a1bd
+> HCI Event: Command Complete (0x0e) plen 10                    [hci0] 7.156103
+      Link Key Request Reply (0x01|0x000b) ncmd 1
+        Status: Success (0x00)
+        Address: 58:E2:8F:0B:8E:15 (OUI 58-E2-8F)
+> HCI Event: Encryption Change (0x08) plen 4                    [hci0] 7.208111
+        Status: Success (0x00)
+        Handle: 12
+        Encryption: Enabled with AES-CCM (0x02)
+< HCI Command: Read Encryption Key Size (0x05|0x0008) plen 2    [hci0] 7.208235
+        Handle: 12
+> HCI Event: Command Complete (0x0e) plen 7                     [hci0] 7.208746
+      Read Encryption Key Size (0x05|0x0008) ncmd 1
+        Status: Success (0x00)
+        Handle: 12
+        Key size: 16
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 7.331635
+        Num handles: 1
+        Handle: 12
+        Count: 1
+> HCI Event: Max Slots Change (0x1b) plen 3                     [hci0] 7.386310
+        Handle: 12
+        Max slots: 5
+> HCI Event: Encryption Key Refresh Complete (0x30) plen 3      [hci0] 7.415368
+        Status: Success (0x00)
+        Handle: 12
+> HCI Event: Role Change (0x12) plen 8                          [hci0] 7.415386
+        Status: Success (0x00)
+        Address: 58:E2:8F:0B:8E:15 (OUI 58-E2-8F)
+        Role: Slave (0x01)
+> HCI Event: Link Supervision Timeout Changed (0x38) plen 4     [hci0] 7.421351
+        Handle: 12
+        Timeout: 20000.000 msec (0x7d00)
+> ACL Data RX: Handle 12 flags 0x02 dlen 12                     [hci0] 7.541262
+      L2CAP: Connection Request (0x02) ident 84 len 4
+        PSM: 25 (0x0019)
+        Source CID: 11271
+< ACL Data TX: Handle 12 flags 0x00 dlen 16                     [hci0] 7.541470
+      L2CAP: Connection Response (0x03) ident 84 len 8
+        Destination CID: 64
+        Source CID: 11271
+        Result: Connection pending (0x0001)
+        Status: Authorization pending (0x0002)
+< ACL Data TX: Handle 12 flags 0x00 dlen 16                     [hci0] 7.542168
+      L2CAP: Connection Response (0x03) ident 84 len 8
+        Destination CID: 64
+        Source CID: 11271
+        Result: Connection successful (0x0000)
+        Status: No further information available (0x0000)
+< ACL Data TX: Handle 12 flags 0x00 dlen 23                     [hci0] 7.542386
+      L2CAP: Configure Request (0x04) ident 4 len 15
+        Destination CID: 11271
+        Flags: 0x0000
+        Option: Retransmission and Flow Control (0x04) [mandatory]
+          Mode: Basic (0x00)
+          TX window size: 0
+          Max transmit: 0
+          Retransmission timeout: 0
+          Monitor timeout: 0
+          Maximum PDU size: 0
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 7.547597
+        Num handles: 1
+        Handle: 12
+        Count: 2
+> HCI Event: Link Supervision Timeout Changed (0x38) plen 4     [hci0] 7.550095
+        Handle: 12
+        Timeout: 5000.000 msec (0x1f40)
+> ACL Data RX: Handle 12 flags 0x02 dlen 16                     [hci0] 7.551289
+      L2CAP: Configure Request (0x04) ident 85 len 8
+        Destination CID: 64
+        Flags: 0x0000
+        Option: Maximum Transmission Unit (0x01) [mandatory]
+          MTU: 1004
+< ACL Data TX: Handle 12 flags 0x00 dlen 18                     [hci0] 7.551394
+      L2CAP: Configure Response (0x05) ident 85 len 10
+        Source CID: 11271
+        Flags: 0x0000
+        Result: Success (0x0000)
+        Option: Maximum Transmission Unit (0x01) [mandatory]
+          MTU: 1004
+> ACL Data RX: Handle 12 flags 0x02 dlen 29                     [hci0] 7.552569
+      L2CAP: Configure Response (0x05) ident 4 len 21
+        Source CID: 64
+        Flags: 0x0000
+        Result: Success (0x0000)
+        Option: Maximum Transmission Unit (0x01) [mandatory]
+          MTU: 672
+        Option: Retransmission and Flow Control (0x04) [mandatory]
+          Mode: Basic (0x00)
+          TX window size: 0
+          Max transmit: 0
+          Retransmission timeout: 0
+          Monitor timeout: 0
+          Maximum PDU size: 0
+> ACL Data RX: Handle 12 flags 0x02 dlen 6                      [hci0] 7.566312
+      Channel: 64 len 2 [PSM 25 mode 0] {chan 0}
+      AVDTP: Discover (0x01) Command (0x00) type 0x00 label 15 nosp 0
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 7.566451
+        Num handles: 1
+        Handle: 12
+        Count: 2
+< ACL Data TX: Handle 12 flags 0x00 dlen 12                     [hci0] 7.592988
+      Channel: 11271 len 8 [PSM 25 mode 0] {chan 0}
+      AVDTP: Discover (0x01) Response Accept (0x02) type 0x00 label 15 nosp 0
+        ACP SEID: 1
+          Media Type: Audio (0x00)
+          SEP Type: SRC (0x00)
+          In use: No
+        ACP SEID: 2
+          Media Type: Audio (0x00)
+          SEP Type: SRC (0x00)
+          In use: No
+        ACP SEID: 3
+          Media Type: Audio (0x00)
+          SEP Type: SRC (0x01)
+          In use: No
+> ACL Data RX: Handle 12 flags 0x02 dlen 12                     [hci0] 7.677569
+      L2CAP: Connection Request (0x02) ident 86 len 4
+        PSM: 23 (0x0017)
+        Source CID: 11528
+< ACL Data TX: Handle 12 flags 0x00 dlen 16                     [hci0] 7.677783
+      L2CAP: Connection Response (0x03) ident 86 len 8
+        Destination CID: 65
+        Source CID: 11528
+        Result: Connection pending (0x0001)
+        Status: Authorization pending (0x0002)
+> ACL Data RX: Handle 12 flags 0x02 dlen 7                      [hci0] 7.678772
+      Channel: 64 len 3 [PSM 25 mode 0] {chan 0}
+      AVDTP: Get All Capabilities (0x0c) Command (0x00) type 0x00 label 0 nosp 0
+        ACP SEID: 3
+< ACL Data TX: Handle 12 flags 0x00 dlen 16                     [hci0] 7.679724
+      L2CAP: Connection Response (0x03) ident 86 len 8
+        Destination CID: 65
+        Source CID: 11528
+        Result: Connection successful (0x0000)
+        Status: No further information available (0x0000)
+< ACL Data TX: Handle 12 flags 0x00 dlen 23                     [hci0] 7.680274
+      L2CAP: Configure Request (0x04) ident 5 len 15
+        Destination CID: 11528
+        Flags: 0x0000
+        Option: Retransmission and Flow Control (0x04) [mandatory]
+          Mode: Basic (0x00)
+          TX window size: 0
+          Max transmit: 0
+          Retransmission timeout: 0
+          Monitor timeout: 0
+          Maximum PDU size: 0
+< ACL Data TX: Handle 12 flags 0x00 dlen 18                     [hci0] 7.681006
+      Channel: 11271 len 14 [PSM 25 mode 0] {chan 0}
+      AVDTP: Get All Capabilities (0x0c) Response Accept (0x02) type 0x00 label 0 nosp 0
+        Service Category: Media Transport (0x01)
+        Service Category: Media Codec (0x07)
+          Media Type: Audio (0x00)
+          Media Codec: SBC (0x00)
+            Frequency: 0xf0
+              16000
+              32000
+              44100
+              48000
+            Channel Mode: 0x0f
+              Mono
+              Dual Channel
+              Stereo
+              Joint Stereo
+            Block Length: 0xf0
+              4
+              8
+              12
+              16
+            Subbands: 0x0c
+              4
+              8
+            Allocation Method: 0x03
+              SNR
+              Loudness
+            Minimum Bitpool: 2
+            Maximum Bitpool: 64
+        Service Category: Delay Reporting (0x08)
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 7.726396
+        Num handles: 1
+        Handle: 12
+        Count: 2
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 7.728810
+        Num handles: 1
+        Handle: 12
+        Count: 2
+> ACL Data RX: Handle 12 flags 0x02 dlen 16                     [hci0] 7.730053
+      L2CAP: Configure Request (0x04) ident 87 len 8
+        Destination CID: 65
+        Flags: 0x0000
+        Option: Maximum Transmission Unit (0x01) [mandatory]
+          MTU: 672
+< ACL Data TX: Handle 12 flags 0x00 dlen 18                     [hci0] 7.730159
+      L2CAP: Configure Response (0x05) ident 87 len 10
+        Source CID: 11528
+        Flags: 0x0000
+        Result: Success (0x0000)
+        Option: Maximum Transmission Unit (0x01) [mandatory]
+          MTU: 672
+> ACL Data RX: Handle 12 flags 0x02 dlen 29                     [hci0] 7.731317
+      L2CAP: Configure Response (0x05) ident 5 len 21
+        Source CID: 65
+        Flags: 0x0000
+        Result: Success (0x0000)
+        Option: Maximum Transmission Unit (0x01) [mandatory]
+          MTU: 672
+        Option: Retransmission and Flow Control (0x04) [mandatory]
+          Mode: Basic (0x00)
+          TX window size: 0
+          Max transmit: 0
+          Retransmission timeout: 0
+          Monitor timeout: 0
+          Maximum PDU size: 0
+< ACL Data TX: Handle 12 flags 0x00 dlen 18                     [hci0] 7.752265
+      Channel: 11528 len 14 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Command: type 0x00 label 0 PID 0x110e
+        AV/C: Status: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: GetCapabilities pt Single len 0x0001
+            CapabilityID: 0x03 (EventsID)
+> ACL Data RX: Handle 12 flags 0x02 dlen 20                     [hci0] 7.766323
+      Channel: 64 len 16 [PSM 25 mode 0] {chan 0}
+      AVDTP: Set Configuration (0x03) Command (0x00) type 0x00 label 1 nosp 0
+        ACP SEID: 3
+        INT SEID: 2
+        Service Category: Media Transport (0x01)
+        Service Category: Media Codec (0x07)
+          Media Type: Audio (0x00)
+          Media Codec: SBC (0x00)
+            Frequency: 44100 (0x20)
+            Channel Mode: Joint Stereo (0x01)
+            Block Length: 16 (0x10)
+            Subbands: 8 (0x04)
+            Allocation Method: Loudness (0x01)
+            Minimum Bitpool: 2
+            Maximum Bitpool: 53
+        Service Category: Delay Reporting (0x08)
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 7.767601
+        Num handles: 1
+        Handle: 12
+        Count: 2
+> ACL Data RX: Handle 12 flags 0x02 dlen 12                     [hci0] 7.771284
+      L2CAP: Connection Request (0x02) ident 88 len 4
+        PSM: 27 (0x001b)
+        Source CID: 11785
+< ACL Data TX: Handle 12 flags 0x00 dlen 16                     [hci0] 7.771478
+      L2CAP: Connection Response (0x03) ident 88 len 8
+        Destination CID: 66
+        Source CID: 11785
+        Result: Connection pending (0x0001)
+        Status: Authorization pending (0x0002)
+< ACL Data TX: Handle 12 flags 0x00 dlen 16                     [hci0] 7.775302
+      L2CAP: Connection Response (0x03) ident 88 len 8
+        Destination CID: 66
+        Source CID: 11785
+        Result: Connection successful (0x0000)
+        Status: No further information available (0x0000)
+< ACL Data TX: Handle 12 flags 0x00 dlen 23                     [hci0] 7.776703
+      L2CAP: Configure Request (0x04) ident 6 len 15
+        Destination CID: 11785
+        Flags: 0x0000
+        Option: Retransmission and Flow Control (0x04) [mandatory]
+          Mode: Enhanced retransmission (0x03)
+          TX window size: 63
+          Max transmit: 3
+          Retransmission timeout: 2000
+          Monitor timeout: 12000
+          Maximum PDU size: 1009
+< ACL Data TX: Handle 12 flags 0x00 dlen 6                      [hci0] 7.785995
+      Channel: 11271 len 2 [PSM 25 mode 0] {chan 0}
+      AVDTP: Set Configuration (0x03) Response Accept (0x02) type 0x00 label 1 nosp 0
+< ACL Data TX: Handle 12 flags 0x00 dlen 9                      [hci0] 7.786479
+      Channel: 11271 len 5 [PSM 25 mode 0] {chan 0}
+      AVDTP: Delay Report (0x0d) Command (0x00) type 0x00 label 10 nosp 0
+        ACP SEID: 2
+        Delay: 0.0ms
+> ACL Data RX: Handle 12 flags 0x02 dlen 26                     [hci0] 7.837556
+      Channel: 65 len 22 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Response: type 0x00 label 0 PID 0x110e
+        AV/C: Stable: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: GetCapabilities pt Single len 0x0009
+            CapabilityID: 0x03 (EventsID)
+            CapabilityCount: 0x07
+            EventsID: 0x01 (EVENT_PLAYBACK_STATUS_CHANGED)
+            EventsID: 0x02 (EVENT_TRACK_CHANGED)
+            EventsID: 0x08 (EVENT_PLAYER_APPLICATION_SETTING_CHANGED)
+            EventsID: 0x09 (EVENT_NOW_PLAYING_CONTENT_CHANGED)
+            EventsID: 0x0a (EVENT_AVAILABLE_PLAYERS_CHANGED)
+            EventsID: 0x0b (EVENT_ADDRESSED_PLAYER_CHANGED)
+            EventsID: 0x0c (EVENT_UIDS_CHANGED)
+< ACL Data TX: Handle 12 flags 0x00 dlen 22                     [hci0] 7.838808
+      Channel: 11528 len 18 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Command: type 0x00 label 1 PID 0x110e
+        AV/C: Notify: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: RegisterNotification pt Single len 0x0005
+            EventID: 0x0c (EVENT_UIDS_CHANGED)
+            Interval: 0x00000000 (0 seconds)
+> ACL Data RX: Handle 12 flags 0x02 dlen 12                     [hci0] 7.856362
+      L2CAP: Connection Request (0x02) ident 89 len 4
+        PSM: 1 (0x0001)
+        Source CID: 12042
+< ACL Data TX: Handle 12 flags 0x00 dlen 16                     [hci0] 7.856564
+      L2CAP: Connection Response (0x03) ident 89 len 8
+        Destination CID: 67
+        Source CID: 12042
+        Result: Connection successful (0x0000)
+        Status: No further information available (0x0000)
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 7.857248
+        Num handles: 1
+        Handle: 12
+        Count: 2
+< ACL Data TX: Handle 12 flags 0x00 dlen 23                     [hci0] 7.857354
+      L2CAP: Configure Request (0x04) ident 7 len 15
+        Destination CID: 12042
+        Flags: 0x0000
+        Option: Retransmission and Flow Control (0x04) [mandatory]
+          Mode: Basic (0x00)
+          TX window size: 0
+          Max transmit: 0
+          Retransmission timeout: 0
+          Monitor timeout: 0
+          Maximum PDU size: 0
+> ACL Data RX: Handle 12 flags 0x02 dlen 30                     [hci0] 7.922608
+      L2CAP: Configure Request (0x04) ident 90 len 22
+        Destination CID: 66
+        Flags: 0x0000
+        Option: Maximum Transmission Unit (0x01) [mandatory]
+          MTU: 672
+        Option: Retransmission and Flow Control (0x04) [mandatory]
+          Mode: Enhanced retransmission (0x03)
+          TX window size: 63
+          Max transmit: 16
+          Retransmission timeout: 0
+          Monitor timeout: 0
+          Maximum PDU size: 1005
+        Option: Frame Check Sequence (0x05) [mandatory]
+          FCS: No FCS (0x00)
+< ACL Data TX: Handle 12 flags 0x00 dlen 29                     [hci0] 7.922755
+      L2CAP: Configure Response (0x05) ident 90 len 21
+        Source CID: 11785
+        Flags: 0x0000
+        Result: Success (0x0000)
+        Option: Maximum Transmission Unit (0x01) [mandatory]
+          MTU: 672
+        Option: Retransmission and Flow Control (0x04) [mandatory]
+          Mode: Enhanced retransmission (0x03)
+          TX window size: 63
+          Max transmit: 16
+          Retransmission timeout: 2000
+          Monitor timeout: 12000
+          Maximum PDU size: 1005
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 7.924010
+        Num handles: 1
+        Handle: 12
+        Count: 2
+> ACL Data RX: Handle 12 flags 0x02 dlen 32                     [hci0] 7.988823
+      L2CAP: Configure Response (0x05) ident 6 len 24
+        Source CID: 66
+        Flags: 0x0000
+        Result: Success (0x0000)
+        Option: Maximum Transmission Unit (0x01) [mandatory]
+          MTU: 672
+        Option: Retransmission and Flow Control (0x04) [mandatory]
+          Mode: Enhanced retransmission (0x03)
+          TX window size: 63
+          Max transmit: 3
+          Retransmission timeout: 2000
+          Monitor timeout: 12000
+          Maximum PDU size: 1009
+        Option: Frame Check Sequence (0x05) [mandatory]
+          FCS: 16-bit FCS (0x01)
+> ACL Data RX: Handle 12 flags 0x02 dlen 7                      [hci0] 8.056319
+      Channel: 64 len 3 [PSM 25 mode 0] {chan 0}
+      AVDTP: Open (0x06) Command (0x00) type 0x00 label 2 nosp 0
+        ACP SEID: 3
+< ACL Data TX: Handle 12 flags 0x00 dlen 6                      [hci0] 8.057054
+      Channel: 11271 len 2 [PSM 25 mode 0] {chan 0}
+      AVDTP: Open (0x06) Response Accept (0x02) type 0x00 label 2 nosp 0
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 8.057188
+        Num handles: 1
+        Handle: 12
+        Count: 2
+> ACL Data RX: Handle 12 flags 0x02 dlen 6                      [hci0] 8.058625
+      Channel: 64 len 2 [PSM 25 mode 0] {chan 0}
+      AVDTP: Delay Report (0x0d) Response Accept (0x02) type 0x00 label 10 nosp 0
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 8.126430
+        Num handles: 1
+        Handle: 12
+        Count: 2
+> ACL Data RX: Handle 12 flags 0x02 dlen 20                     [hci0] 8.127560
+      Channel: 65 len 16 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Response: type 0x00 label 1 PID 0x110e
+        AV/C: Interim: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: RegisterNotification pt Single len 0x0003
+            EventID: 0x0c (EVENT_UIDS_CHANGED)
+            UIDCounter: 0x0000 (0)
+< ACL Data TX: Handle 12 flags 0x00 dlen 22                     [hci0] 8.128072
+      Channel: 11528 len 18 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Command: type 0x00 label 2 PID 0x110e
+        AV/C: Notify: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: RegisterNotification pt Single len 0x0005
+            EventID: 0x0b (EVENT_ADDRESSED_PLAYER_CHANGED)
+            Interval: 0x00000000 (0 seconds)
+> ACL Data RX: Handle 12 flags 0x02 dlen 16                     [hci0] 8.195119
+      L2CAP: Configure Request (0x04) ident 91 len 8
+        Destination CID: 67
+        Flags: 0x0000
+        Option: Maximum Transmission Unit (0x01) [mandatory]
+          MTU: 256
+< ACL Data TX: Handle 12 flags 0x00 dlen 18                     [hci0] 8.195247
+      L2CAP: Configure Response (0x05) ident 91 len 10
+        Source CID: 12042
+        Flags: 0x0000
+        Result: Success (0x0000)
+        Option: Maximum Transmission Unit (0x01) [mandatory]
+          MTU: 256
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 8.195832
+        Num handles: 1
+        Handle: 12
+        Count: 2
+> ACL Data RX: Handle 12 flags 0x02 dlen 29                     [hci0] 8.215070
+      L2CAP: Configure Response (0x05) ident 7 len 21
+        Source CID: 67
+        Flags: 0x0000
+        Result: Success (0x0000)
+        Option: Maximum Transmission Unit (0x01) [mandatory]
+          MTU: 672
+        Option: Retransmission and Flow Control (0x04) [mandatory]
+          Mode: Basic (0x00)
+          TX window size: 0
+          Max transmit: 0
+          Retransmission timeout: 0
+          Monitor timeout: 0
+          Maximum PDU size: 0
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 8.216334
+        Num handles: 1
+        Handle: 12
+        Count: 2
+> ACL Data RX: Handle 12 flags 0x02 dlen 12                     [hci0] 8.282591
+      L2CAP: Connection Request (0x02) ident 92 len 4
+        PSM: 25 (0x0019)
+        Source CID: 12299
+< ACL Data TX: Handle 12 flags 0x00 dlen 16                     [hci0] 8.282786
+      L2CAP: Connection Response (0x03) ident 92 len 8
+        Destination CID: 68
+        Source CID: 12299
+        Result: Connection pending (0x0001)
+        Status: Authorization pending (0x0002)
+< ACL Data TX: Handle 12 flags 0x00 dlen 16                     [hci0] 8.283602
+      L2CAP: Connection Response (0x03) ident 92 len 8
+        Destination CID: 68
+        Source CID: 12299
+        Result: Connection successful (0x0000)
+        Status: No further information available (0x0000)
+< ACL Data TX: Handle 12 flags 0x00 dlen 23                     [hci0] 8.283909
+      L2CAP: Configure Request (0x04) ident 8 len 15
+        Destination CID: 12299
+        Flags: 0x0000
+        Option: Retransmission and Flow Control (0x04) [mandatory]
+          Mode: Basic (0x00)
+          TX window size: 0
+          Max transmit: 0
+          Retransmission timeout: 0
+          Monitor timeout: 0
+          Maximum PDU size: 0
+> ACL Data RX: Handle 12 flags 0x02 dlen 22                     [hci0] 8.303904
+      Channel: 65 len 18 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Response: type 0x00 label 2 PID 0x110e
+        AV/C: Interim: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: RegisterNotification pt Single len 0x0005
+            EventID: 0x0b (EVENT_ADDRESSED_PLAYER_CHANGED)
+            PlayerID: 0x0001 (1)
+            UIDCounter: 0x0000 (0)
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 8.303932
+        Num handles: 1
+        Handle: 12
+        Count: 2
+< ACL Data TX: Handle 12 flags 0x00 dlen 22                     [hci0] 8.304986
+      Channel: 11528 len 18 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Command: type 0x00 label 3 PID 0x110e
+        AV/C: Notify: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: RegisterNotification pt Single len 0x0005
+            EventID: 0x0a (EVENT_AVAILABLE_PLAYERS_CHANGED)
+            Interval: 0x00000000 (0 seconds)
+< ACL Data TX: Handle 12 flags 0x00 dlen 24                     [hci0] 8.305698
+      Channel: 11785 len 20 ctrl 0x0000 [PSM 27 mode 3] {chan 2}
+      I-frame: Unsegmented TxSeq 0 ReqSeq 0
+      AVCTP Browsing: Command: type 0x00 label 0 PID 0x110e
+        AVRCP: GetFolderItems: len 0x000a
+          Scope: 0x00 (Media Player List)
+          StartItem: 0x00000000 (0)
+          EndItem: 0xffffffff (4294967295)
+          AttributeCount: 0x00 (0)
+> ACL Data RX: Handle 12 flags 0x02 dlen 23                     [hci0] 8.370079
+      Channel: 67 len 19 [PSM 1 mode 0] {chan 3}
+      SDP: Service Attribute Request (0x04) tid 1 len 14
+        Record handle: 0x0000
+        Max attribute bytes: 256
+        Attribute list: [len 7]
+          Sequence (6) with 5 bytes [8 extra bits] len 7
+            Unsigned Integer (1) with 4 bytes [0 extra bits] len 5
+              0x00000201
+        Continuation state: 0
+< ACL Data TX: Handle 12 flags 0x00 dlen 46                     [hci0] 8.371158
+      Channel: 12042 len 42 [PSM 1 mode 0] {chan 3}
+      SDP: Service Attribute Response (0x05) tid 1 len 37
+        Attribute bytes: 34
+          Attribute list: [len 32] {position 0}
+            Attribute: Service Record Handle (0x0000) [len 2]
+              0x00000000
+            Attribute: Service Class ID List (0x0001) [len 2]
+              UUID (3) with 2 bytes [0 extra bits] len 3
+                Service Discovery Server Service Class (0x1000)
+            Attribute: Unknown (0x0200) [len 2]
+              Unsigned Integer (1) with 2 bytes [0 extra bits] len 3
+                0x0100
+            Attribute: Unknown (0x0201) [len 2]
+              0x5cc21087
+        Continuation state: 0
+> ACL Data RX: Handle 12 flags 0x02 dlen 20                     [hci0] 8.371370
+      L2CAP: Configure Request (0x04) ident 93 len 12
+        Destination CID: 68
+        Flags: 0x0000
+        Option: Maximum Transmission Unit (0x01) [mandatory]
+          MTU: 1004
+        Option: Flush Timeout (0x02) [mandatory]
+          Flush timeout: 200
+< ACL Data TX: Handle 12 flags 0x00 dlen 18                     [hci0] 8.371572
+      L2CAP: Configure Response (0x05) ident 93 len 10
+        Source CID: 12299
+        Flags: 0x0000
+        Result: Success (0x0000)
+        Option: Maximum Transmission Unit (0x01) [mandatory]
+          MTU: 1004
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 8.371678
+        Num handles: 1
+        Handle: 12
+        Count: 2
+> ACL Data RX: Handle 12 flags 0x02 dlen 29                     [hci0] 8.438854
+      L2CAP: Configure Response (0x05) ident 8 len 21
+        Source CID: 68
+        Flags: 0x0000
+        Result: Success (0x0000)
+        Option: Maximum Transmission Unit (0x01) [mandatory]
+          MTU: 672
+        Option: Retransmission and Flow Control (0x04) [mandatory]
+          Mode: Basic (0x00)
+          TX window size: 0
+          Max transmit: 0
+          Retransmission timeout: 0
+          Monitor timeout: 0
+          Maximum PDU size: 0
+> ACL Data RX: Handle 12 flags 0x02 dlen 18                     [hci0] 8.441715
+      Channel: 65 len 14 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Response: type 0x00 label 3 PID 0x110e
+        AV/C: Interim: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: RegisterNotification pt Single len 0x0001
+            EventID: 0x0a (EVENT_AVAILABLE_PLAYERS_CHANGED)
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 8.441740
+        Num handles: 1
+        Handle: 12
+        Count: 2
+< ACL Data TX: Handle 12 flags 0x00 dlen 22                     [hci0] 8.443400
+      Channel: 11528 len 18 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Command: type 0x00 label 4 PID 0x110e
+        AV/C: Notify: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: RegisterNotification pt Single len 0x0005
+            EventID: 0x08 (EVENT_PLAYER_APPLICATION_SETTING_CHANGED)
+            Interval: 0x00000000 (0 seconds)
+> ACL Data RX: Handle 12 flags 0x02 dlen 25                     [hci0] 8.506346
+      Channel: 67 len 21 [PSM 1 mode 0] {chan 3}
+      SDP: Service Search Attribute Request (0x06) tid 2 len 16
+        Search pattern: [len 8]
+          Sequence (6) with 6 bytes [8 extra bits] len 8
+            UUID (3) with 2 bytes [0 extra bits] len 3
+              Handsfree Audio Gateway (0x111f)
+            UUID (3) with 2 bytes [0 extra bits] len 3
+              RFCOMM (0x0003)
+        Max record count: 256
+        Attribute list: [len 5]
+          Sequence (6) with 3 bytes [8 extra bits] len 5
+            Unsigned Integer (1) with 2 bytes [0 extra bits] len 3
+              0x0004
+        Continuation state: 0
+< ACL Data TX: Handle 12 flags 0x00 dlen 33                     [hci0] 8.507649
+      Channel: 12042 len 29 [PSM 1 mode 0] {chan 3}
+      SDP: Service Search Attribute Response (0x07) tid 2 len 24
+        Attribute bytes: 21
+          Attribute list: [len 17] {position 0}
+            Attribute: Protocol Descriptor List (0x0004) [len 2]
+              Sequence (6) with 3 bytes [8 extra bits] len 5
+                UUID (3) with 2 bytes [0 extra bits] len 3
+                  L2CAP (0x0100)
+              Sequence (6) with 5 bytes [8 extra bits] len 7
+                UUID (3) with 2 bytes [0 extra bits] len 3
+                  RFCOMM (0x0003)
+                Unsigned Integer (1) with 1 byte [0 extra bits] len 2
+                  0x0d
+        Continuation state: 0
+> ACL Data RX: Handle 12 flags 0x02 dlen 55                     [hci0] 8.507844
+      Channel: 66 len 51 ctrl 0x0100 [PSM 27 mode 3] {chan 2}
+      I-frame: Unsegmented TxSeq 0 ReqSeq 1
+      AVCTP Browsing: Response: type 0x00 label 0 PID 0x110e
+        AVRCP: GetFolderItems: len 0x0029
+          Status: 0x04 (Success)
+          UIDCounter: 0x0000 (0)
+          NumOfItems: 0x0001 (1)
+          Item: 0x01 (Media Player) 
+          Length: 0x0021 (33)
+          PlayerID: 0x0001 (1)
+          PlayerType: 0x0001 (Audio)
+          PlayerSubType: 0x00000000 (None)
+          PlayStatus: 0x00 (STOPPED)
+          Features: 0x0000000000b7011c0200000000000000
+            Advanced Control Player
+            Browsing
+            Searching
+            NowPlaying
+          CharsetID: 0x006a (UTF-8)
+          NameLength: 0x0005 (5)
+          Name: Music
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 8.507875
+        Num handles: 1
+        Handle: 12
+        Count: 2
+< ACL Data TX: Handle 12 flags 0x00 dlen 24                     [hci0] 8.510492
+      Channel: 11785 len 20 ctrl 0x0102 [PSM 27 mode 3] {chan 2}
+      I-frame: Unsegmented TxSeq 1 ReqSeq 1
+      AVCTP Browsing: Command: type 0x00 label 1 PID 0x110e
+        AVRCP: GetFolderItems: len 0x000a
+          Scope: 0x00 (Media Player List)
+          StartItem: 0x00000000 (0)
+          EndItem: 0xffffffff (4294967295)
+          AttributeCount: 0x00 (0)
+> ACL Data RX: Handle 12 flags 0x02 dlen 8                      [hci0] 8.575049
+      Channel: 66 len 4 ctrl 0x0101 [PSM 27 mode 3] {chan 2}
+      S-frame: Receiver Ready (RR) ReqSeq 1
+        frame too short
+        d5 ac                                            ..              
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 8.577068
+        Num handles: 1
+        Handle: 12
+        Count: 2
+> ACL Data RX: Handle 12 flags 0x02 dlen 23                     [hci0] 8.643820
+      Channel: 65 len 19 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Response: type 0x00 label 4 PID 0x110e
+        AV/C: Interim: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: RegisterNotification pt Single len 0x0006
+            EventID: 0x08 (EVENT_PLAYER_APPLICATION_SETTING_CHANGED)
+            AttributeCount: 0x02
+            AttributeID: 0x02 (Repeat Mode Status)
+            ValueID: 0x01 (OFF)
+            AttributeID: 0x03 (Shuffle ON/OFF Status)
+            ValueID: 0x01 (OFF)
+< ACL Data TX: Handle 12 flags 0x00 dlen 22                     [hci0] 8.644924
+      Channel: 11528 len 18 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Command: type 0x00 label 5 PID 0x110e
+        AV/C: Notify: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: RegisterNotification pt Single len 0x0005
+            EventID: 0x02 (EVENT_TRACK_CHANGED)
+            Interval: 0x00000000 (0 seconds)
+> ACL Data RX: Handle 12 flags 0x02 dlen 25                     [hci0] 8.728825
+      Channel: 67 len 21 [PSM 1 mode 0] {chan 3}
+      SDP: Service Search Attribute Request (0x06) tid 3 len 16
+        Search pattern: [len 8]
+          Sequence (6) with 6 bytes [8 extra bits] len 8
+            UUID (3) with 2 bytes [0 extra bits] len 3
+              Headset AG (0x1112)
+            UUID (3) with 2 bytes [0 extra bits] len 3
+              RFCOMM (0x0003)
+        Max record count: 256
+        Attribute list: [len 5]
+          Sequence (6) with 3 bytes [8 extra bits] len 5
+            Unsigned Integer (1) with 2 bytes [0 extra bits] len 3
+              0x0004
+        Continuation state: 0
+< ACL Data TX: Handle 12 flags 0x00 dlen 33                     [hci0] 8.730432
+      Channel: 12042 len 29 [PSM 1 mode 0] {chan 3}
+      SDP: Service Search Attribute Response (0x07) tid 3 len 24
+        Attribute bytes: 21
+          Attribute list: [len 17] {position 0}
+            Attribute: Protocol Descriptor List (0x0004) [len 2]
+              Sequence (6) with 3 bytes [8 extra bits] len 5
+                UUID (3) with 2 bytes [0 extra bits] len 3
+                  L2CAP (0x0100)
+              Sequence (6) with 5 bytes [8 extra bits] len 7
+                UUID (3) with 2 bytes [0 extra bits] len 3
+                  RFCOMM (0x0003)
+                Unsigned Integer (1) with 1 byte [0 extra bits] len 2
+                  0x0c
+        Continuation state: 0
+> ACL Data RX: Handle 12 flags 0x02 dlen 55                     [hci0] 8.745210
+      Channel: 66 len 51 ctrl 0x0202 [PSM 27 mode 3] {chan 2}
+      I-frame: Unsegmented TxSeq 1 ReqSeq 2
+      AVCTP Browsing: Response: type 0x00 label 1 PID 0x110e
+        AVRCP: GetFolderItems: len 0x0029
+          Status: 0x04 (Success)
+          UIDCounter: 0x0000 (0)
+          NumOfItems: 0x0001 (1)
+          Item: 0x01 (Media Player) 
+          Length: 0x0021 (33)
+          PlayerID: 0x0001 (1)
+          PlayerType: 0x0001 (Audio)
+          PlayerSubType: 0x00000000 (None)
+          PlayStatus: 0x00 (STOPPED)
+          Features: 0x0000000000b7011c0200000000000000
+            Advanced Control Player
+            Browsing
+            Searching
+            NowPlaying
+          CharsetID: 0x006a (UTF-8)
+          NameLength: 0x0005 (5)
+          Name: Music
+< ACL Data TX: Handle 12 flags 0x00 dlen 16                     [hci0] 8.746498
+      Channel: 11785 len 12 ctrl 0x0204 [PSM 27 mode 3] {chan 2}
+      I-frame: Unsegmented TxSeq 2 ReqSeq 2
+      AVCTP Browsing: Command: type 0x00 label 2 PID 0x110e
+        AVRCP: SetBrowsedPlayer: len 0x0002
+          PlayerID: 0x0001 (1)
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 8.746760
+        Num handles: 1
+        Handle: 12
+        Count: 2
+> ACL Data RX: Handle 12 flags 0x02 dlen 8                      [hci0] 8.815000
+      Channel: 66 len 4 ctrl 0x0201 [PSM 27 mode 3] {chan 2}
+      S-frame: Receiver Ready (RR) ReqSeq 2
+        frame too short
+        95 ad                                            ..              
+> ACL Data RX: Handle 12 flags 0x02 dlen 26                     [hci0] 8.835167
+      Channel: 65 len 22 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Response: type 0x00 label 5 PID 0x110e
+        AV/C: Interim: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: RegisterNotification pt Single len 0x0009
+            EventID: 0x02 (EVENT_TRACK_CHANGED)
+            Identifier: 0xffffffffffffffff (18446744073709551615)
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 8.835186
+        Num handles: 1
+        Handle: 12
+        Count: 2
+< ACL Data TX: Handle 12 flags 0x00 dlen 22                     [hci0] 8.836343
+      Channel: 11528 len 18 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Command: type 0x00 label 6 PID 0x110e
+        AV/C: Notify: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: RegisterNotification pt Single len 0x0005
+            EventID: 0x01 (EVENT_PLAYBACK_STATUS_CHANGED)
+            Interval: 0x00000000 (0 seconds)
+> ACL Data RX: Handle 12 flags 0x02 dlen 12                     [hci0] 8.902524
+      L2CAP: Disconnection Request (0x06) ident 94 len 4
+        Destination CID: 67
+        Source CID: 12042
+< ACL Data TX: Handle 12 flags 0x00 dlen 12                     [hci0] 8.902688
+      L2CAP: Disconnection Response (0x07) ident 94 len 4
+        Destination CID: 67
+        Source CID: 12042
+> ACL Data RX: Handle 12 flags 0x02 dlen 42                     [hci0] 8.923896
+      Channel: 66 len 38 ctrl 0x0304 [PSM 27 mode 3] {chan 2}
+      I-frame: Unsegmented TxSeq 2 ReqSeq 3
+      AVCTP Browsing: Response: type 0x00 label 2 PID 0x110e
+        AVRCP: SetBrowsedPlayer: len 0x001c
+          Status: 0x04 (Success)
+          UIDCounter: 0x0000 (0)
+          Number of Items: 0x00000004 (4)
+          CharsetID: 0x006a (UTF-8)
+          Folder Depth: 0x01 (1)
+          Folder: <empty>
+< ACL Data TX: Handle 12 flags 0x00 dlen 26                     [hci0] 8.925098
+      Channel: 11785 len 22 ctrl 0x0306 [PSM 27 mode 3] {chan 2}
+      I-frame: Unsegmented TxSeq 3 ReqSeq 3
+      AVCTP Browsing: Command: type 0x00 label 3 PID 0x110e
+        AVRCP: GetItemAttributes: len 0x000c
+          Scope: 0x03 (Now Playing)
+          UID: 0xffffffffffffffff (18446744073709551615)
+          UIDCounter: 0x0000 (0)
+          AttributeCount: 0x00 (0)
+> ACL Data RX: Handle 12 flags 0x02 dlen 8                      [hci0] 8.991325
+      Channel: 66 len 4 ctrl 0x0301 [PSM 27 mode 3] {chan 2}
+      S-frame: Receiver Ready (RR) ReqSeq 3
+        frame too short
+        54 6d                                            Tm              
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 8.991817
+        Num handles: 1
+        Handle: 12
+        Count: 2
+> ACL Data RX: Handle 12 flags 0x02 dlen 19                     [hci0] 9.012576
+      Channel: 65 len 15 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Response: type 0x00 label 6 PID 0x110e
+        AV/C: Interim: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: RegisterNotification pt Single len 0x0002
+            EventID: 0x01 (EVENT_PLAYBACK_STATUS_CHANGED)
+            PlayStatus: 0x00 (STOPPED)
+< ACL Data TX: Handle 12 flags 0x00 dlen 17                     [hci0] 9.013528
+      Channel: 11528 len 13 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Command: type 0x00 label 7 PID 0x110e
+        AV/C: Status: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: GetPlayStatus pt Single len 0x0000
+> ACL Data RX: Handle 12 flags 0x02 dlen 18                     [hci0] 9.078793
+      Channel: 65 len 14 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Command: type 0x00 label 0 PID 0x110e
+        AV/C: Status: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: GetCapabilities pt Single len 0x0001
+            CapabilityID: 0x03 (EventsID)
+< ACL Data TX: Handle 12 flags 0x00 dlen 27                     [hci0] 9.079808
+      Channel: 11528 len 23 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Response: type 0x00 label 0 PID 0x110e
+        AV/C: Stable: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: GetCapabilities pt Single len 0x000a
+            CapabilityID: 0x03 (EventsID)
+            CapabilityCount: 0x08
+            EventsID: 0x01 (EVENT_PLAYBACK_STATUS_CHANGED)
+            EventsID: 0x02 (EVENT_TRACK_CHANGED)
+            EventsID: 0x03 (EVENT_TRACK_REACHED_END)
+            EventsID: 0x04 (EVENT_TRACK_REACHED_START)
+            EventsID: 0x08 (EVENT_PLAYER_APPLICATION_SETTING_CHANGED)
+            EventsID: 0x0a (EVENT_AVAILABLE_PLAYERS_CHANGED)
+            EventsID: 0x0b (EVENT_ADDRESSED_PLAYER_CHANGED)
+            EventsID: 0x0d (EVENT_VOLUME_CHANGED)
+> ACL Data RX: Handle 12 flags 0x02 dlen 15                     [hci0] 9.101385
+      Channel: 66 len 11 ctrl 0x0406 [PSM 27 mode 3] {chan 2}
+      I-frame: Unsegmented TxSeq 3 ReqSeq 4
+      AVCTP Browsing: Response: type 0x00 label 3 PID 0x110e
+        AVRCP: GetItemAttributes: len 0x0001
+          Status: 0x09 (Does Not Exist)
+          AttributeCount: 0xcc (204)
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 9.101409
+        Num handles: 1
+        Handle: 12
+        Count: 2
+> ACL Data RX: Handle 12 flags 0x02 dlen 26                     [hci0] 9.168842
+      Channel: 65 len 22 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Response: type 0x00 label 7 PID 0x110e
+        AV/C: Stable: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: GetPlayStatus pt Single len 0x0009
+            SongLength: 0x00000000 (0 miliseconds)
+            SongPosition: 0x00000000 (0 miliseconds)
+            PlayStatus: 0x00 (STOPPED)
+< ACL Data TX: Handle 12 flags 0x00 dlen 26                     [hci0] 9.169812
+      Channel: 11528 len 22 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Command: type 0x00 label 8 PID 0x110e
+        AV/C: Status: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: GetElementAttributes pt Single len 0x0009
+            Identifier: 0x0 (PLAYING)
+            AttributeCount: 0x00
+> ACL Data RX: Handle 12 flags 0x02 dlen 8                      [hci0] 9.169997
+      Channel: 66 len 4 ctrl 0x0401 [PSM 27 mode 3] {chan 2}
+      S-frame: Receiver Ready (RR) ReqSeq 4
+        frame too short
+        15 af                                            ..              
+> ACL Data RX: Handle 12 flags 0x02 dlen 22                     [hci0] 9.238882
+      Channel: 65 len 18 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Command: type 0x00 label 1 PID 0x110e
+        AV/C: Notify: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: RegisterNotification pt Single len 0x0005
+            EventID: 0x0d (EVENT_VOLUME_CHANGED)
+            Interval: 0x00000000 (0 seconds)
+< ACL Data TX: Handle 12 flags 0x00 dlen 19                     [hci0] 9.239719
+      Channel: 11528 len 15 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Response: type 0x00 label 1 PID 0x110e
+        AV/C: Interim: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: RegisterNotification pt Single len 0x0002
+            EventID: 0x0d (EVENT_VOLUME_CHANGED)
+            Volume: 100.00% (127/127)
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 9.239873
+        Num handles: 1
+        Handle: 12
+        Count: 2
+> ACL Data RX: Handle 12 flags 0x02 dlen 66                     [hci0] 9.307705
+      Channel: 65 len 62 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Response: type 0x00 label 8 PID 0x110e
+        AV/C: Stable: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: GetElementAttributes pt Single len 0x0031
+            AttributeCount: 0x06
+            Attribute: 0x00000001 (Title)
+            CharsetID: 0x006a (UTF-8)
+            AttributeValueLength: 0x0000
+            AttributeValue: 
+            Attribute: 0x00000002 (Artist)
+            CharsetID: 0x006a (UTF-8)
+            AttributeValueLength: 0x0000
+            AttributeValue: 
+            Attribute: 0x00000003 (Album)
+            CharsetID: 0x006a (UTF-8)
+            AttributeValueLength: 0x0000
+            AttributeValue: 
+            Attribute: 0x00000004 (Track)
+            CharsetID: 0x006a (UTF-8)
+            AttributeValueLength: 0x0000
+            AttributeValue: 
+            Attribute: 0x00000005 (Track Total)
+            CharsetID: 0x006a (UTF-8)
+            AttributeValueLength: 0x0000
+            AttributeValue: 
+            Attribute: 0x00000006 (Genre)
+            CharsetID: 0x006a (UTF-8)
+            AttributeValueLength: 0x0000
+            AttributeValue: 
+< ACL Data TX: Handle 12 flags 0x00 dlen 17                     [hci0] 9.309281
+      Channel: 11528 len 13 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Command: type 0x00 label 9 PID 0x110e
+        AV/C: Status: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: GetPlayStatus pt Single len 0x0000
+< ACL Data TX: Handle 12 flags 0x00 dlen 8                      [hci0] 9.309694
+      Channel: 11785 len 4 ctrl 0x0401 [PSM 27 mode 3] {chan 2}
+      S-frame: Receiver Ready (RR) ReqSeq 4
+        frame too short
+        62 42                                            bB              
+> ACL Data RX: Handle 12 flags 0x02 dlen 26                     [hci0] 9.392633
+      Channel: 65 len 22 [PSM 23 mode 0] {chan 1}
+      AVCTP Control: Response: type 0x00 label 9 PID 0x110e
+        AV/C: Stable: address 0x48 opcode 0x00
+          Subunit: Panel
+          Opcode: Vendor Dependent
+          Company ID: 0x001958
+          AVRCP: GetPlayStatus pt Single len 0x0009
+            SongLength: 0x00000000 (0 miliseconds)
+            SongPosition: 0x00000000 (0 miliseconds)
+            PlayStatus: 0x00 (STOPPED)
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 9.392658
+        Num handles: 1
+        Handle: 12
+        Count: 2
+> HCI Event: Number of Completed Packets (0x13) plen 5          [hci0] 9.581643
+        Num handles: 1
+        Handle: 12
+        Count: 1
+> ACL Data RX: Handle 12 flags 0x02 dlen 12                    [hci0] 30.625138
+      L2CAP: Disconnection Request (0x06) ident 95 len 4
+        Destination CID: 66
+        Source CID: 11785
+< ACL Data TX: Handle 12 flags 0x00 dlen 12                    [hci0] 30.625317
+      L2CAP: Disconnection Response (0x07) ident 95 len 4
+        Destination CID: 66
+        Source CID: 11785
+> ACL Data RX: Handle 12 flags 0x02 dlen 12                    [hci0] 30.631392
+      L2CAP: Disconnection Request (0x06) ident 96 len 4
+        Destination CID: 65
+        Source CID: 11528
+< ACL Data TX: Handle 12 flags 0x00 dlen 12                    [hci0] 30.631551
+      L2CAP: Disconnection Response (0x07) ident 96 len 4
+        Destination CID: 65
+        Source CID: 11528
+> ACL Data RX: Handle 12 flags 0x02 dlen 7                     [hci0] 30.697702
+      Channel: 64 len 3 [PSM 25 mode 0] {chan 0}
+      AVDTP: Close (0x08) Command (0x00) type 0x00 label 3 nosp 0
+        ACP SEID: 3
+< ACL Data TX: Handle 12 flags 0x00 dlen 6                     [hci0] 30.698411
+      Channel: 11271 len 2 [PSM 25 mode 0] {chan 0}
+      AVDTP: Close (0x08) Response Accept (0x02) type 0x00 label 3 nosp 0
+> ACL Data RX: Handle 12 flags 0x02 dlen 12                    [hci0] 30.700233
+      L2CAP: Disconnection Request (0x06) ident 97 len 4
+        Destination CID: 64
+        Source CID: 11271
+> HCI Event: Number of Completed Packets (0x13) plen 5         [hci0] 30.700258
+        Num handles: 1
+        Handle: 12
+        Count: 2
+< ACL Data TX: Handle 12 flags 0x00 dlen 12                    [hci0] 30.700416
+      L2CAP: Disconnection Response (0x07) ident 97 len 4
+        Destination CID: 64
+        Source CID: 11271
+< ACL Data TX: Handle 12 flags 0x00 dlen 12                    [hci0] 30.703022
+      L2CAP: Disconnection Request (0x06) ident 9 len 4
+        Destination CID: 12299
+        Source CID: 68
+> HCI Event: Number of Completed Packets (0x13) plen 5         [hci0] 30.771469
+        Num handles: 1
+        Handle: 12
+        Count: 2
+> HCI Event: Link Supervision Timeout Changed (0x38) plen 4    [hci0] 30.837726
+        Handle: 12
+        Timeout: 20000.000 msec (0x7d00)
+> ACL Data RX: Handle 12 flags 0x02 dlen 12                    [hci0] 30.856428
+      L2CAP: Disconnection Request (0x06) ident 98 len 4
+        Destination CID: 68
+        Source CID: 12299
+< ACL Data TX: Handle 12 flags 0x00 dlen 12                    [hci0] 30.856583
+      L2CAP: Disconnection Response (0x07) ident 98 len 4
+        Destination CID: 68
+        Source CID: 12299
+> ACL Data RX: Handle 12 flags 0x02 dlen 12                    [hci0] 30.923904
+      L2CAP: Disconnection Response (0x07) ident 9 len 4
+        Destination CID: 12299
+        Source CID: 68
+> HCI Event: Number of Completed Packets (0x13) plen 5         [hci0] 30.991511
+        Num handles: 1
+        Handle: 12
+        Count: 2
+< HCI Command: Disconnect (0x01|0x0006) plen 3                 [hci0] 34.889695
+        Handle: 12
+        Reason: Remote User Terminated Connection (0x13)
+> HCI Event: Command Status (0x0f) plen 4                      [hci0] 34.890797
+      Disconnect (0x01|0x0006) ncmd 1
+        Status: Success (0x00)
+> HCI Event: Disconnect Complete (0x05) plen 4                 [hci0] 35.005448
+        Status: Success (0x00)
+        Handle: 12
+        Reason: Connection Terminated By Local Host (0x16)
+@ MGMT Event: Device Disconnected (0x000c) plen 8     {0x0002} [hci0] 35.005540
+        BR/EDR Address: 58:E2:8F:0B:8E:15 (OUI 58-E2-8F)
+        Reason: Connection terminated by local host (0x02)
+@ MGMT Event: Device Disconnected (0x000c) plen 8     {0x0001} [hci0] 35.005540
+        BR/EDR Address: 58:E2:8F:0B:8E:15 (OUI 58-E2-8F)
+        Reason: Connection terminated by local host (0x02)
